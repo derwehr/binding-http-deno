@@ -1,0 +1,16 @@
+{
+  "name": "binding-http-deno",
+  "version": "0.1.0",
+  "description": "A Deno binding for the node-wot http  binding",
+  "author": "Thomas Wehr <thomas.wehr@fau.de>",
+  "tasks": {
+    "server": "env DEBUG='*:*' deno run --allow-net --allow-env --allow-sys test-server.ts"
+  },
+  "imports": {
+    "@node-wot/core": "npm:@node-wot/core@^0.9.1",
+    "accept-language-parser": "npm:accept-language-parser@^1.5.0",
+    "wot-thing-description-types": "npm:wot-thing-description-types@1.1.0-12-March-2025"
+  },
+  "nodeModulesDir": "auto",
+  "exports": "./src/mod.ts"
+}
